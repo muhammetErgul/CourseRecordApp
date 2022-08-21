@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+    --bg-color: #eee;
+    --border-color: #aaa;
+    --body-color: #fff;
+    --font-color: #333;
+}
+
+.dark-theme {
+    --bg-color: #273340;
+    --border-color: rgb(66, 83, 100);
+    --body-color: #15202b;
+    --font-color: #fff;
+}
+body {
+    background-color: var(--body-color);
+    transition: all 0.5s ease;
+    font-family: 'Lato', sans-serif;
+}
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    transition: all 0.5s ease;
+}
+nav h2 {
+    margin-left: 40px;
+    color: var(--font-color);
+    font-weight: bold;
+
+}
+nav i {
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    color: var(--font-color);
+    transition: all 0.5s ease;
+}
+.form-group label {
+    color: var(--font-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-control{
+    border: none;
+    border: 1px solid var(--border-color);
+}
+.form-control:focus{
+    outline: none;
+}
+thead tr th {
+    color: var(--font-color);
+}
+#courseList tr td {
+    color: var(--font-color);
+}
